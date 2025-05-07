@@ -1,7 +1,9 @@
-export default function Info() {
-    return (
-        <section id="info" class="relative h-screen bg-gray-300">
+import { forwardRef } from "react";
 
-        </section>
-    );
-}
+const Info = forwardRef((props, ref) => (
+    <section id="info" ref={ref} class="relative h-[65vh] bg-gray-300">
+        Info
+    </section>
+));
+
+export default Info;
