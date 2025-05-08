@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useRef, useEffect, useState } from 'react';
 // Page Sections
 import Hero from "./sections/Hero";
 import Info from "./sections/Info";
@@ -9,37 +8,63 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export default function App() {
-    // use for expanding navbar on scroll
+    // use state to toggle/adjsut navbar values 
     const [expanded, setExpanded] = useState(false);
-    useEffect(() => {
-        const threshold = window.innerHeight * (1/3);
-        const handleScroll = () => { setExpanded(window.scrollY > threshold); }
+    const [activeSection, setActiveSection] = useState('Welcome!');
+    const offset = 60; // general offset of navbar
+    
+    // references for each section
+    const heroRef = useRef(null);
+    const infoRef = useRef(null);
+    const projRef = useRef(null);
 
-        window.addEventListener('scroll', handleScroll);
+    // values/references of each sections
+    const sections = [
+        { value: 'Welcome!', ref: heroRef },
+        { value: 'Personal Info', ref: infoRef },
+        { value: 'Projects', ref: projRef },
+    ];
+
+    // use for expanding navbar on scroll
+    useEffect(() => {
+        const handleScroll = () => {
+            if (!heroRef.current) return;
+
+            const bottom = heroRef.current.getBoundingClientRect().bottom;
+            setExpanded(bottom <= offset + 5);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
     });
 
     // use for changing active section of navbar
-    const [activeSection, setActiveSection] = useState('Welcome!');
-
-    const { ref: heroRef, inView: heroInView } = useInView({ threshold: 0.4 });
-    const { ref: infoRef, inView: infoInView } = useInView({ threshold: 0.4 });
-    const { ref: projRef, inView: projInView } = useInView({ threshold: 0.4 });
-
     useEffect(() => {
-        if (heroInView) {
-            setActiveSection("Welcome!");
-        } else if (infoInView) {
-            setActiveSection("Personal Info");
-        } else if (projInView) {
-            setActiveSection("Projects");
-        }
-    }, [heroInView, infoInView, projInView]);
+        const handleScroll = () => {
+            let curr = null;
 
+            for (let i = 0; i < sections.length; i++) {
+                const { value, ref } = sections[i];
+                const top = ref.current?.getBoundingClientRect().top;
+
+                if (top !== undefined && top - offset <= 5) {
+                    curr = value;
+                }
+            }
+
+            setActiveSection(curr);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    })
+
+    // overall website
     return (
         <div class="relative">
             <Navbar 
-                activeSection={activeSection} expanded={expanded} 
+                activeSection={activeSection} 
+                expanded={expanded} 
             />
             <Hero ref={heroRef} />
             <Info ref={infoRef} />

@@ -2,7 +2,7 @@ import { forwardRef } from 'react';
 import projects from '../projects.json';
 
 const Projects = forwardRef((props, ref) => (
-    <section id="projects" ref={ref} class="relative items-center justify-center h-[75vh] bg-gray-300">
+    <section id="projects" ref={ref} className="relative items-center justify-center h-[85vh] bg-gray-300">
         Projects
         {/* { 
             projects.map((proj, idx) => (
