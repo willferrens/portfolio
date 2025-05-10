@@ -7,7 +7,7 @@ const Projects = forwardRef((props, ref) => (
         { 
             projects.map((proj, idx) => (
                 <motion.div
-                    initial={{ opacity: 0, x: (idx % 2 === 0 ? -30 : 30) }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.05 }}
+                    initial={{ opacity: 0, x: (idx % 2 !== 0 ? -30 : 30) }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.05 }}
                     transition={{ default: { duration: (0.25 * idx) + 0.4 }, scale: { duration: 0.2 }}} viewport={{ amount: 0.75, once: false }}
                     key={idx} className="mx-auto mb-4 p-4 w-1/2 shadow rounded bg-white"
                 >
