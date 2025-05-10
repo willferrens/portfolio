@@ -27,20 +27,25 @@ export default function App() {
 
     // use for expanding navbar on scroll
     useEffect(() => {
-        const handleScroll = () => {
+        const expandNav = () => {
             if (!heroRef.current) return;
 
             const bottom = heroRef.current.getBoundingClientRect().bottom;
             setExpanded(bottom <= offset + 5);
         };
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
+        // add events for both onload and onscroll for best use
+        window.addEventListener('load', expandNav, { passive: true });
+        window.addEventListener('scroll', expandNav, { passive: true });
+        return () => {
+            window.removeEventListener('load', expandNav);
+            window.removeEventListener('scroll', expandNav);
+        };
     });
 
     // use for changing active section of navbar
     useEffect(() => {
-        const handleScroll = () => {
+        const getSection = () => {
             let curr = null;
 
             for (let i = 0; i < sections.length; i++) {
@@ -55,20 +60,25 @@ export default function App() {
             setActiveSection(curr);
         };
 
-        window.addEventListener('scroll', handleScroll, { passive: true });
-        return () => window.removeEventListener('scroll', handleScroll);
-    })
+        // add events for both onload and onscroll for best use
+        window.addEventListener('load', getSection, { passive: true });
+        window.addEventListener('scroll', getSection, { passive: true });
+        return () => {
+            window.removeEventListener('load', getSection);
+            window.removeEventListener('scroll', getSection);
+        };
+    });
 
     // overall website
     return (
         <div class="relative">
             <Navbar 
                 activeSection={activeSection} 
-                expanded={expanded} 
+                expanded={expanded}
             />
             <Hero ref={heroRef} />
-            <Info ref={infoRef} />
-            <Projects ref={projRef} />
+            <Info ref={infoRef}  />
+            <Projects ref={projRef}  />
             <Footer />
         </div>
     );

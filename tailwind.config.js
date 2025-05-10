@@ -16,5 +16,6 @@ module.exports = {
     corePlugins: {
         scrollBehavior: true
     },
+    darkMode: 'class',
 }
 

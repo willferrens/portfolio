@@ -16,7 +16,6 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg font-semibold mb-2">Contact</h3>
                     <p className="text-sm">Personal: willferrens@gmail.com</p>
-                    <p className="text-sm">School: wferrens@umd.edu</p>
                     <p className="text-sm">Location: Baltimore, MD, USA</p>
                 </div>
             </div>

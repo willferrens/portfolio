@@ -4,27 +4,27 @@
         "date": "March 2023",
         "description": "",
         "image": "",
-        "link": ""
+        "link": "#"
     },
     {
         "title": "Interactive Maze Solving Program",
         "date": "February 2024",
         "description": "",
         "image": "",
-        "link": ""
+        "link": "https://github.com/willferrens/maze-visualization"
     },
     {
         "title": "2D Platformer Board Builder",
         "date": "April 2023",
         "description": "",
         "image": "",
-        "link": ""
+        "link": "https://github.com/willferrens/board-builder"
     },
     {
         "title": "Personal Portfolio",
         "date": "May 2025",
         "description": "",
         "image": "",
-        "link": ""
+        "link": "https://github.com/willferrens/portfolio"
     }
 ]
