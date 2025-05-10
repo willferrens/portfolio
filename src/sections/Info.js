@@ -41,7 +41,7 @@ const Info = forwardRef((props, ref) => (
                             My technical interests span across [your specific interests, e.g., web development, 
                             artificial intelligence, cybersecurity]. I'm particularly excited about [specific 
                             technologies or frameworks you enjoy working with], and I'm always eager to learn 
-                            and explore new technologies.
+                            and explore new technologies.s
                         </motion.p>
                     </div>
                 </motion.div>
