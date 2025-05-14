@@ -1,10 +1,6 @@
-# **PORTFOLIO**
+<div align="center">
 
-*Showcase Your Skills, Connect with Opportunities*
-
-![Last Commit](https://img.shields.io/badge/last%20commit-last%20sunday-blue)
-![JavaScript](https://img.shields.io/badge/javascript-90.3%25-yellow)
-![Languages](https://img.shields.io/badge/languages-3-blue)
+# **Personal Portfolio**
 
 *Built with the tools and technologies:*
 
@@ -16,15 +12,13 @@
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)
 ![CSS](https://img.shields.io/badge/-CSS-purple?logo=css3&logoColor=white)
 
----
+*General Information:*
 
-## Table of Contents
+![Last Commit](https://img.shields.io/badge/last%20commit-last%20sunday-blue)
+![JavaScript](https://img.shields.io/badge/javascript-90.3%25-yellow)
+![Languages](https://img.shields.io/badge/languages-3-blue)
 
-- [Overview](#overview)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Usage](#usage)
+</div>
 
 ---
 
@@ -33,6 +27,9 @@
 This is a personal portfolio built using modern front-end technologies to showcase projects, skills, and contact information.
 
 ---
+
+## 
+
 
 ## Getting Started
 
