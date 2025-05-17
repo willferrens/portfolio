@@ -43,5 +43,42 @@
             "devicon": "devicon-linkedin-plain",
             "link": "https://www.linkedin.com/in/willferrens/"
         }
+    ],
+    "projects": [
+        {
+            "title": "Robot Car",
+            "date": "March 2023",
+            "overview": "blah",
+            "technologies": "blah",
+            "image": "",
+            "link": "#",
+            "demo": "#"
+        },
+        {
+            "title": "Interactive Maze Solving Program",
+            "date": "February 2024",
+            "overview": "blah",
+            "technologies": "blah",
+            "image": "",
+            "link": "https://github.com/willferrens/maze-visualization",
+            "demo": "#"
+        },
+        {
+            "title": "2D Platformer Board Builder",
+            "date": "April 2023",
+            "overview": "blah",
+            "technologies": "blah",
+            "image": "",
+            "link": "https://github.com/willferrens/board-builder",
+            "demo": "#"
+        },
+        {
+            "title": "Personal Portfolio",
+            "date": "May 2025",
+            "overview": "blah",
+            "technologies": "blah",
+            "image": "",
+            "link": "https://github.com/willferrens/portfolio"
+        }
     ]
 }

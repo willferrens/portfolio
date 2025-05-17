@@ -1,6 +1,6 @@
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
-import info from "../info.json";
+import { skills, socials } from "../info.json";
 
 const Info = forwardRef((props, ref) => (
     <section id="info" ref={ref} className="relative min-h-[75vh] bg-gray-300 py-5 flex items-center justify-center">
@@ -55,7 +55,7 @@ const Info = forwardRef((props, ref) => (
                         </motion.h2>
                         <div className="grid grid-cols-3 md:grid-cols-5 gap-8 justify-items-center text-gray-700 dark:text-gray-200">
                             {
-                                info.skills.map((skill, idx) => (
+                                skills.map((skill, idx) => (
                                     <motion.div 
                                         key={idx} initial={{ opacity: 0, y: (idx % 2 === 0 ? 20 : -20 )}} whileInView={{ opacity: 1, y: 0 }} whileHover={{ scale: 1.2 }}
                                         transition={{ default: 0.6, scale: 0.2 }} viewport={{ once: false }} className="flex flex-col items-center"
@@ -72,7 +72,7 @@ const Info = forwardRef((props, ref) => (
                         </motion.h2>
                         <div className="text-white text-sm">
                             {
-                                info.socials.map((social, idx) => (
+                                socials.map((social, idx) => (
                                     <button
                                         key={idx} type="button" onclick={`window.open('${social.link}', '_blank)`}
                                         className={`bg-[${social.color}] hover:bg-[${social.color}]/90 focus:outline-none font-medium rounded-lg shadow-md px-5 py-3 inline-flex items-center mr-2 mb-2 gap-2`}

@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import { motion } from "framer-motion";
-import projects from '../projects.json';
+import { projects } from '../info.json';
 
 const Projects = forwardRef((props, ref) => (
     <section id="projects" ref={ref} className="relative pt-8 pb-8 items-center justify-center min-h-[85vh] bg-gray-300">
