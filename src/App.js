@@ -77,7 +77,7 @@ export default function App() {
                 expanded={expanded}
             />
             <Hero ref={heroRef} />
-            <Info ref={infoRef}  />
+            <Info ref={infoRef} />
             <Projects ref={projRef}  />
             <Footer />
         </div>

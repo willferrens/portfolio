@@ -1,0 +1,47 @@
+
+{
+    "skills": [
+        {
+            "name": "Java",
+            "devicon": "java/java-original.svg"
+        },
+        {
+            "name": "JavaScript",
+            "devicon": "javascript/javascript-original.svg"
+        },
+        {
+            "name": "React",
+            "devicon": "react/react-original.svg"
+        },
+        {
+            "name": "Node.js",
+            "devicon": "nodejs/nodejs-original.svg"
+        },
+        {
+            "name": "Git",
+            "devicon": "git/git-original.svg"
+        },
+        {
+            "name": "Python",
+            "devicon": "python/python-original.svg"
+        },
+        {
+            "name": "HTML",
+            "devicon": "html5/html5-original.svg"
+        }
+    ],
+    "socials": [
+        {
+            "name": "GitHub",
+            "color": "#24292F",
+            "devicon": "devicon-github-original",
+            "link": "https://github.com/willferrens/"
+        },
+        {
+            "name": "LinkedIn",
+            "color": "#0A66C2",
+            "devicon": "devicon-linkedin-plain",
+            "link": "https://www.linkedin.com/in/willferrens/"
+        }
+    ]
+}

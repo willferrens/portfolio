@@ -39,7 +39,7 @@ const Projects = forwardRef((props, ref) => (
                         <div className="md:w-1/3 flex flex-col space-y-4">
                                 <motion.img
                                     src={proj.image} alt={proj.title} loading="lazy"
-                                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                                    className="w-full h-64 object-cover rounded-lg shadow-md"
                                     whileHover={{ scale: 1.05 }} transition={{ duration: 0.2 }}
                                 />
                                 <div className="flex gap-4 justify-center">
