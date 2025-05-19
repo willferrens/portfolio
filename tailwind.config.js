@@ -5,11 +5,7 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors: {
-                "navy": {
-                    500: "#213448"
-                }
-            }
+            colors: { /* for custom colors */ }
         },
     },
     plugins: [],

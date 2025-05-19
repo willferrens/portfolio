@@ -3,31 +3,43 @@
     "skills": [
         {
             "name": "Java",
-            "devicon": "java/java-original.svg"
+            "devicon": "java/java-original.svg",
+            "link": "https://dev.java/"
         },
         {
             "name": "JavaScript",
-            "devicon": "javascript/javascript-original.svg"
+            "devicon": "javascript/javascript-original.svg",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+            "name": "Processing",
+            "devicon": "processing/processing-original.svg",
+            "link": "https://processing.org/"
         },
         {
             "name": "React",
-            "devicon": "react/react-original.svg"
+            "devicon": "react/react-original.svg",
+            "link": "https://react.dev/"
         },
         {
             "name": "Node.js",
-            "devicon": "nodejs/nodejs-original.svg"
-        },
-        {
-            "name": "Git",
-            "devicon": "git/git-original.svg"
+            "devicon": "nodejs/nodejs-original.svg",
+            "link": "https://nodejs.org/en"
         },
         {
             "name": "Python",
-            "devicon": "python/python-original.svg"
+            "devicon": "python/python-original.svg",
+            "link": "https://www.python.org/"
         },
         {
             "name": "HTML",
-            "devicon": "html5/html5-original.svg"
+            "devicon": "html5/html5-original.svg",
+            "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+            "name": "Git",
+            "devicon": "git/git-original.svg",
+            "link": "https://git-scm.com/"
         }
     ],
     "socials": [
@@ -49,26 +61,33 @@
             "title": "Robot Car",
             "date": "March 2023",
             "overview": "blah",
-            "technologies": "blah",
+            "purpose": "The purpose of this project was to serve as a testing basis for my classmate's own logic circuits in my IB Computer Science class during our unit covering circuits. Each student connected their individual logic circuit comprising of four NAND gates in an arrangement to allow the car to function.",
             "image": "",
-            "link": "#",
             "demo": "#"
         },
         {
             "title": "Interactive Maze Solving Program",
             "date": "February 2024",
-            "overview": "blah",
-            "technologies": "blah",
-            "image": "",
+            "overview": "This program, built in the Processing IDE, consists of a Custom Maze Builder and Additional Maze Solvers that apply the custom Breadth-first and Depth-first search applications within individual windows. More information can be found on the github repo of this project linked below.",
+            "technologies": [
+                { "name": "Processing", "devicon": "processing/processing-original.svg" },
+                { "name": "Java", "devicon": "java/java-original.svg" }
+            ],
+            "purpose": "The purpose of this project was to visualize breadth-first and depth-first search algorithms in a unique application such as a maze and allow for users to customize the mazes to push the limits of the algorithms.",
+            "image": "/maze_thumbnail.avif",
             "link": "https://github.com/willferrens/maze-visualization",
             "demo": "#"
         },
         {
             "title": "2D Platformer Board Builder",
             "date": "April 2023",
-            "overview": "blah",
-            "technologies": "blah",
-            "image": "",
+            "overview": "This program, built in the Processing IDE, consists of a Main World Editor including a block key and overall world map (currently in testing). The program implements simple GUI to allow users ease of use and custom import/export for editing of custom worlds.",
+            "technologies": [
+                { "name": "Processing", "devicon": "processing/processing-original.svg" },
+                { "name": "Java", "devicon": "java/java-original.svg" }
+            ],
+            "purpose": "The purpose of this project was to enable my classmates in my IB Computer Science class with the ability to build worlds for their 2D platformer final projects. Since the date of creation, this program has been used for the past two years by students in the IB Computer Science program at my high school.",
+            "image": "/boardbuilder_thumbnail.avif",
             "link": "https://github.com/willferrens/board-builder",
             "demo": "#"
         },
@@ -76,7 +95,12 @@
             "title": "Personal Portfolio",
             "date": "May 2025",
             "overview": "blah",
-            "technologies": "blah",
+            "technologies": [
+                { "name": "React", "devicon": "react/react-original.svg" },
+                { "name": "TailwindCSS", "devicon": "tailwindcss/tailwindcss-original.svg" },
+                { "name": "HTML", "devicon": "html5/html5-original.svg" }
+            ],
+            "purpose": "blah",
             "image": "",
             "link": "https://github.com/willferrens/portfolio"
         }
