@@ -15,7 +15,7 @@
 *General Information:*
 
 ![Last Commit](https://img.shields.io/badge/last%20commit-last%20sunday-blue)
-![JavaScript](https://img.shields.io/badge/javascript-90.3%25-yellow)
+![JavaScript](https://img.shields.io/badge/javascript-91.1%25-yellow)
 ![Languages](https://img.shields.io/badge/languages-3-blue)
 
 </div>
