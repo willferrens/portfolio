@@ -58,22 +58,15 @@
     ],
     "projects": [
         {
-            "title": "Robot Car",
-            "date": "March 2023",
-            "overview": "blah",
-            "purpose": "The purpose of this project was to serve as a testing basis for my classmate's own logic circuits in my IB Computer Science class during our unit covering circuits. Each student connected their individual logic circuit comprising of four NAND gates in an arrangement to allow the car to function.",
-            "image": "",
-            "demo": "#"
-        },
-        {
-            "title": "Interactive Maze Solving Program",
+            "title": "DFS and BFS Maze Solvers",
             "date": "February 2024",
-            "overview": "This program, built in the Processing IDE, consists of a Custom Maze Builder and Additional Maze Solvers that apply the custom Breadth-first and Depth-first search applications within individual windows. More information can be found on the github repo of this project linked below.",
+            "overview": "Processing program consisting of a custom maze builder and breadth-first and depth-first search maze solvers that utilize custom implementations of each based upon altered concepts within binary trees. More information can be found on the GitHub repo linked below.",
+            "purpose": "Visualized breadth-first and depth-first search algorithms in custom maze applications allowing for users to push the algorithms to their limits.",
             "technologies": [
                 { "name": "Processing", "devicon": "processing/processing-original.svg" },
-                { "name": "Java", "devicon": "java/java-original.svg" }
+                { "name": "Java", "devicon": "java/java-original.svg" },
+                { "name": "JSON", "devicon": "json/json-plain.svg" }
             ],
-            "purpose": "The purpose of this project was to visualize breadth-first and depth-first search algorithms in a unique application such as a maze and allow for users to customize the mazes to push the limits of the algorithms.",
             "image": "/maze_thumbnail.avif",
             "link": "https://github.com/willferrens/maze-visualization",
             "demo": "#"
@@ -81,26 +74,35 @@
         {
             "title": "2D Platformer Board Builder",
             "date": "April 2023",
-            "overview": "This program, built in the Processing IDE, consists of a Main World Editor including a block key and overall world map (currently in testing). The program implements simple GUI to allow users ease of use and custom import/export for editing of custom worlds.",
+            "overview": "Processing program consisting of a overall world editor with additional block key and world map. Implements simple JOptionPane GUI to allow ease of use and devised custom import/export for world files.",
+            "purpose": "Enabled students in my high school's IB Computer Science curriculum for the past two years to build 2D world maps and implement their respective world files with ease using my custom JSON file structure.",
             "technologies": [
                 { "name": "Processing", "devicon": "processing/processing-original.svg" },
-                { "name": "Java", "devicon": "java/java-original.svg" }
+                { "name": "Java", "devicon": "java/java-original.svg" },
+                { "name": "JSON", "devicon": "json/json-plain.svg" }
             ],
-            "purpose": "The purpose of this project was to enable my classmates in my IB Computer Science class with the ability to build worlds for their 2D platformer final projects. Since the date of creation, this program has been used for the past two years by students in the IB Computer Science program at my high school.",
             "image": "/boardbuilder_thumbnail.avif",
             "link": "https://github.com/willferrens/board-builder",
             "demo": "#"
         },
         {
+            "title": "Robot Car",
+            "date": "March 2023",
+            "overview": "Improvised circuit consisting of a [insert type of chip] controlling the overall logic of the circuit that passes the logic of three light sensors through an outer circuit that is then routed into transistors for motor control.",
+            "purpose": "Designed to serve as a testing basis for my classmate's own logic circuits utilzing a quad NAND gate chip in my IB Computer Science class during our unit covering circuits.",
+            "image": "",
+            "demo": "#"
+        },
+        {
             "title": "Personal Portfolio",
             "date": "May 2025",
-            "overview": "blah",
+            "overview": "Personal Website built using ReactJS and TailwindCSS incorporating dynamic animations through the motion.dev library and a custom hero section with a perlin noise lattice using the three.js library.",
+            "purpose": "Display my skills working with web frontend and expresses my technical skills along with my additional personal projects.",
             "technologies": [
                 { "name": "React", "devicon": "react/react-original.svg" },
                 { "name": "TailwindCSS", "devicon": "tailwindcss/tailwindcss-original.svg" },
-                { "name": "HTML", "devicon": "html5/html5-original.svg" }
+                { "name": "Motion", "devicon": "framermotion/framermotion-original.svg" }
             ],
-            "purpose": "blah",
             "image": "",
             "link": "https://github.com/willferrens/portfolio"
         }

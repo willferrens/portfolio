@@ -7,7 +7,7 @@ const Info = forwardRef((props, ref) => (
         <div className="container mx-auto max-w-6xl">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-                viewport={{ once: true }} className="flex flex-col md:flex-row items-center justify-center gap-8"
+                viewport={{ once: true }} className="flex flex-row items-center justify-center gap-8"
             >
                 <motion.div className="flex justify-end">
                     <div className="relative group w-64 h-64">
@@ -30,18 +30,18 @@ const Info = forwardRef((props, ref) => (
                         </motion.h2>
                         <div className="space-y-2 sm:text-sm lg:text-lg text-gray-700 leading-relaxed">
                             <motion.p
-                                initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.02 }}
-                                viewport={{ once: true }} transition={{ default: { duration: 0.6 }, scale: { duration: 0.2 }}}
+                                initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }} transition={{ duration: 0.6 }}
                             >
-                                Hello! I'm Will and thanks for visiting my portfolio! I'm originally from Towson, MD, and I started 
-                                coding in middle school through basic Web Projects and Discord Chatbots, and, have since  
+                                Welcome to my portfolio! I'm Will, originally from Towson, MD, and I started 
+                                coding in middle school through basic Web Projects and Discord Chatbots, and have since  
                                 grown my love for problem solving through programming within my personal and academic pursuits.
                             </motion.p>
                             <motion.p
                                 initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.02 }}
                                 viewport={{ once: true }} transition={{ duration: 0.6 }} 
                             >
-                                [more about interests]
+                                I have recently been working 
                             </motion.p>
                         </div>
                     </div>

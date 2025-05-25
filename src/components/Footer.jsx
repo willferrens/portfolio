@@ -10,7 +10,6 @@ export default function Footer() {
                     <div className="flex justify-center gap-4">
                         <a href="https://github.com/willferrens" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">GitHub</a>
                         <a href="https://linkedin.com/in/willferrens" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">LinkedIn</a>
-                        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400">Twitter</a>
                     </div>
                 </div>
                 <div>

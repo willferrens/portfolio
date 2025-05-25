@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Noise } from "noisejs";
 import * as THREE from "three";
@@ -8,12 +8,6 @@ const noise = new Noise(Math.random());
 function WavyLattice() {
     const meshRef = useRef();
     const originalPositions = useRef();
-
-    useEffect(() => {
-        const geometry = meshRef.current.geometry;
-        const colors = new Float32Array(geometry.attributes.position.count * 3).fill(1);
-        geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
-    }, []);
 
     useFrame(({ clock }) => {
         if (!meshRef.current) return;
@@ -37,15 +31,15 @@ function WavyLattice() {
         for (let i = 0; i < positions.length; i += 3) {
             const ox = originalPositions.current[i];
             const oy = originalPositions.current[i + 1];
+            
+            const mz = noise.perlin3(ox * 0.5, oy * 0.5, time * 0.4) * 1.1;
+            positions[i + 2] = mz;
 
-            const z = noise.perlin3(ox * 0.5, oy * 0.5, time * 0.4) * 1.1;
-            positions[i + 2] = z;
-
-            const t = map(z, -1, 1, 0, 1);
+            const t = map(mz, -1, 1, 0, 0.75);
 
             colors[i] = t;
             colors[i + 1] = 0;
-            colors[i + 2] = 2 - t;
+            colors[i + 2] = 0;
         }
 
         geometry.attributes.position.needsUpdate = true;
@@ -56,7 +50,7 @@ function WavyLattice() {
     return (
         <mesh ref={meshRef} rotation={[-55 * Math.PI / 180, 0, 0]}>
             <planeGeometry args={[60, 40, 25, 15]} />
-            <meshBasicMaterial wireframe={true} vertexColors={true} />
+            <meshStandardMaterial wireframe={true} vertexColors={true} />
         </mesh>
     );
 }
@@ -76,9 +70,11 @@ export default function HeroCanvas() {
                 position: "absolute", zIndex: 0,
                 width: "100%", height: "100vh",
                 top: 0, left: 0, pointerEvents: "none",
-                opacity: "30%", backgroundColor: "#111827"
+                opacity: "40%", backgroundColor: "#111827"
             }} className="canvas-background"
         >
+            <ambientLight intensity={0.8} />
+            <directionalLight position={[10, 10, 10]} intensity={1.2} />
             <WavyLattice />
         </Canvas>
     );

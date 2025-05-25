@@ -8,7 +8,7 @@ const Projects = forwardRef((props, ref) => (
             info.projects.map((proj, idx) => (
                 <motion.div
                     initial={{ opacity: 0, x: (idx % 2 !== 0 ? -50 : 50) }} whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.4 }} viewport={{ amount: 1/3, once: false }}
+                    transition={{ duration: 0.4 }} viewport={{ amount: 1/3, once: true }}
                     key={idx} className="mx-auto mb-8 w-3/4 shadow-lg rounded-lg bg-white"
                 >
                     <div className="flex flex-row">
@@ -23,8 +23,12 @@ const Projects = forwardRef((props, ref) => (
                                     initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }} transition={{ duratation: 0.4, delay: 0.2 }}
                                 >
-                                    <h4 className="font-semibold mb-2 text-gray-700">Overview</h4>
-                                    <p className="text-gray-600">{proj.overview}</p>
+                                    {proj.overview && (
+                                        <div>
+                                            <h4 className="font-semibold mb-2 text-gray-700">Overview</h4>
+                                            <p className="text-gray-600">{proj.overview}</p>
+                                        </div>
+                                    )}
                                 </motion.div>
 
                                 <motion.div
@@ -56,23 +60,23 @@ const Projects = forwardRef((props, ref) => (
                             </div>
                         </div>
                         <div className="w-1/3 flex flex-col items-center">
-                            <img
+                            <motion.img
                                 src={proj.image} alt={proj.title} loading="lazy" decoding="async"
-                                className="h-full object-cover"
+                                className="h-full object-fill rounded-tr-lg"
                             />
                             <div className="flex w-full items-center text-center text-white justify-center">
                                 {proj.link && (
                                     <a
                                         href={proj.link} target="_blank" rel="noreferrer"
-                                        className={`${proj.link && proj.demo ? "w-1/2" : "w-full rounded-br-md"} px-4 py-2 bg-gray-800 hover:bg-gray-700 transition-colors`}
+                                        className={`${proj.link && proj.demo ? "w-1/2" : "w-full rounded-br-md"} px-4 py-2 bg-gray-800 hover:opacity-80 transition-colors`}
                                     >
-                                        GitHub
+                                        GitHub 
                                     </a>
                                 )}
                                 {proj.demo && (
                                     <a
                                         href={proj.demo} target="_blank" rel="noreferrer"
-                                        className={`${proj.link && proj.demo ? "w-1/2" : "w-full"} px-4 py-2 rounded-br-md bg-gray-800 hover:bg-gray-700 transition-colors`}
+                                        className={`${proj.link && proj.demo ? "w-1/2" : "w-full"} px-4 py-2 rounded-br-md bg-gray-800 hover:opacity-80 transition-colors`}
                                     >
                                         Demo
                                     </a>
