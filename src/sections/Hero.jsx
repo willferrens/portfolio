@@ -12,13 +12,13 @@ const Hero = forwardRef((props, ref) => (
         >
             <motion.h1
                 initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}
-                viewport={{ once: true }} className="text-4xl font-bold"
+                viewport={{ once: true }} className="text-2xl lg:text-4xl font-bold"
             >
                 Welcome! I'm Will Ferrens
             </motion.h1>
             <motion.p
                 initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }} className="mt-4 text-2xl text-white max-w-2xl"
+                viewport={{ once: true }} className="mt-4 text-lg lg:text-2xl text-white max-w-2xl"
             >
                 An <span className="font-bold">Undergraduate Student</span> at the
                 University of Maryland, College Park and aspiring {' '}

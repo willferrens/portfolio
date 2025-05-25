@@ -54,14 +54,20 @@
             "color": "#0A66C2",
             "devicon": "devicon-linkedin-plain",
             "link": "https://www.linkedin.com/in/willferrens/"
+        },
+        {
+            "name": "LeetCode",
+            "color": "#FFA116",
+            "devicon": "devicon-google-plain",
+            "link": "https://leetcode.com/u/wferrens/"
         }
     ],
     "projects": [
         {
             "title": "DFS and BFS Maze Solvers",
-            "date": "February 2024",
+            "date": "Feb. 2024",
             "overview": "Processing program consisting of a custom maze builder and breadth-first and depth-first search maze solvers that utilize custom implementations of each based upon altered concepts within binary trees. More information can be found on the GitHub repo linked below.",
-            "purpose": "Visualized breadth-first and depth-first search algorithms in custom maze applications allowing for users to push the algorithms to their limits.",
+            "purpose": "Visualizes breadth-first and depth-first search algorithms in custom maze applications allowing for users to push the algorithms to their limits.",
             "technologies": [
                 { "name": "Processing", "devicon": "processing/processing-original.svg" },
                 { "name": "Java", "devicon": "java/java-original.svg" },
@@ -72,9 +78,9 @@
             "demo": "#"
         },
         {
-            "title": "2D Platformer Board Builder",
-            "date": "April 2023",
-            "overview": "Processing program consisting of a overall world editor with additional block key and world map. Implements simple JOptionPane GUI to allow ease of use and devised custom import/export for world files.",
+            "title": "2D Platformer World Builder",
+            "date": "Apr. 2023",
+            "overview": "Processing program consisting of an overall world editor with additional block key and world map. Implements simple JOptionPane GUI to allow ease of use and devised custom import/export for world files.",
             "purpose": "Enabled students in my high school's IB Computer Science curriculum for the past two years to build 2D world maps and implement their respective world files with ease using my custom JSON file structure.",
             "technologies": [
                 { "name": "Processing", "devicon": "processing/processing-original.svg" },
@@ -87,7 +93,7 @@
         },
         {
             "title": "Robot Car",
-            "date": "March 2023",
+            "date": "Mar. 2023",
             "overview": "Improvised circuit consisting of a [insert type of chip] controlling the overall logic of the circuit that passes the logic of three light sensors through an outer circuit that is then routed into transistors for motor control.",
             "purpose": "Designed to serve as a testing basis for my classmate's own logic circuits utilzing a quad NAND gate chip in my IB Computer Science class during our unit covering circuits.",
             "image": "",
@@ -100,7 +106,7 @@
             "purpose": "Display my skills working with web frontend and expresses my technical skills along with my additional personal projects.",
             "technologies": [
                 { "name": "React", "devicon": "react/react-original.svg" },
-                { "name": "TailwindCSS", "devicon": "tailwindcss/tailwindcss-original.svg" },
+                { "name": "Tailwind", "devicon": "tailwindcss/tailwindcss-original.svg" },
                 { "name": "Motion", "devicon": "framermotion/framermotion-original.svg" }
             ],
             "image": "",

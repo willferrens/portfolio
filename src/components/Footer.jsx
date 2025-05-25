@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="bg-gray-900 text-white min-h-[20vh] py-8 px-4 z-1">
-            <div className="max-w-6xl mx-auto grid grid-cols-3 gap-8 text-center">
+            <div className="max-w-6xl mx-auto grid grid-row lg:grid-cols-3 gap-8 text-center">
                 <div>
                     <p className="text-sm">&copy; Will Ferrens 2025<br /><br />All Rights Reserved.</p>
                 </div>
