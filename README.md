@@ -1,7 +1,7 @@
 <div align="center">
 
 # **Personal Portfolio**
-
+---
 *General Information:*
 
 ![JSON](https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white)
