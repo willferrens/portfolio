@@ -24,7 +24,8 @@
 
 ## Overview
 
-This is a personal portfolio built using modern front-end technologies to showcase projects, skills, and contact information.
+This is a personal portfolio built using modern front-end technologies to showcase projects, skills, and contact information.<br>
+Entirety of project was built in React and TailwindCSS, with additional animations made motion.dev and a hero section constructed in THREE.js.
 
 ---
 
