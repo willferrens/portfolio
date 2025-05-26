@@ -29,4 +29,3 @@ This is a personal portfolio built using modern front-end technologies to showca
 ## Acknowledgements
 
 - [DEVICON](https://devicon.dev/): website icons
-- 
