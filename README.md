@@ -2,8 +2,6 @@
 
 # **Personal Portfolio**
 
----
-
 *General Information:*
 
 ![JSON](https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white)
@@ -16,8 +14,6 @@
 ![Languages](https://img.shields.io/badge/languages-3-blue)
 
 </div>
-
----
 
 ## Overview
 
