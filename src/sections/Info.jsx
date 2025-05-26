@@ -38,7 +38,7 @@ const Info = forwardRef((props, ref) => (
                                 grown my love for problem solving through programming within my personal and academic pursuits.
                             </motion.p>
                             <motion.p
-                                initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.02 }}
+                                initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }} transition={{ duration: 0.6 }} 
                             >
                                 I have recently been working on some personal projects to learn Rust and Ruby while also completing
