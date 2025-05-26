@@ -15,7 +15,7 @@
 *General Information:*
 
 ![Last Commit](https://img.shields.io/badge/last%20commit-last%20sunday-blue)
-![JavaScript](https://img.shields.io/badge/javascript-91.1%25-yellow)
+![JavaScript](https://img.shields.io/badge/javascript-93.5%25-yellow)
 ![Languages](https://img.shields.io/badge/languages-3-blue)
 
 </div>
@@ -30,18 +30,3 @@ This is a personal portfolio built using modern front-end technologies to showca
 
 ## 
 
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js >= 14
-- npm or yarn
-
-### Installation
-
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-npm install
-```
