@@ -73,7 +73,7 @@
                 { "name": "Java", "devicon": "java/java-original.svg" },
                 { "name": "JSON", "devicon": "json/json-plain.svg" }
             ],
-            "image": "/maze_thumbnail.avif",
+            "image": "/assets/maze_thumbnail.avif",
             "link": "https://github.com/willferrens/maze-visualization",
             "demo": "#"
         },
@@ -87,7 +87,7 @@
                 { "name": "Java", "devicon": "java/java-original.svg" },
                 { "name": "JSON", "devicon": "json/json-plain.svg" }
             ],
-            "image": "/boardbuilder_thumbnail.avif",
+            "image": "/assets/boardbuilder_thumbnail.avif",
             "link": "https://github.com/willferrens/board-builder",
             "demo": "#"
         },
@@ -96,7 +96,7 @@
             "date": "Mar. 2023",
             "overview": "Improvised circuit consisting of a [insert type of chip] controlling the overall logic of the circuit that passes the logic of three light sensors through an outer circuit that is then routed into transistors for motor control.",
             "purpose": "Designed to serve as a testing basis for my classmate's own logic circuits utilzing a quad NAND gate chip in my IB Computer Science class during our unit covering circuits.",
-            "image": "",
+            "image": "/assets/boardbuilder_thumbnail.avif",
             "demo": "#"
         },
         {
@@ -109,7 +109,7 @@
                 { "name": "Tailwind", "devicon": "tailwindcss/tailwindcss-original.svg" },
                 { "name": "Motion", "devicon": "framermotion/framermotion-original.svg" }
             ],
-            "image": "",
+            "image": "/assets/boardbuilder_thumbnail.avif",
             "link": "https://github.com/willferrens/portfolio"
         }
     ]

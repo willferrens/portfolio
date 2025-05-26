@@ -1,9 +1,9 @@
 {
     "short_name": "Personal Portfolio",
-    "name": "Will Ferren's Portfolio",
+    "name": "Will Ferrens' Portfolio",
     "icons": [],
     "start_url": ".",
     "display": "standalone",
-    "theme_color": "#000000",
-    "background_color": "#ffffff"
+    "theme_color": "#111827",
+    "background_color": "#D1D5DB"
 }

@@ -71,7 +71,7 @@ export default function App() {
 
     // overall website
     return (
-        <div class="relative">
+        <div className="relative">
             <Navbar 
                 activeSection={activeSection} 
                 expanded={expanded}

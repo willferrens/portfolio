@@ -39,14 +39,14 @@ const Projects = forwardRef((props, ref) => (
                                         <h4 className="font-bold mb-2 text-gray-700">Technologies</h4>
                                     )}
                                     {proj.technologies && proj.technologies.map((tech, idx) => (
-                                        <div className="inline-flex gap-2 mr-2">
+                                        <div key={idx} className="inline-flex gap-2 lg:mr-2">
                                             {tech.name}
                                             <img
-                                                loading="lazy" alt={tech.name} className="w-4 h-4 lg:w-4 lg:h-4"
+                                                loading="lazy" alt={tech.name} className="w-6 h-6 lg:w-6 lg:h-6"
                                                 src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.devicon}`}
                                             />
                                             {idx !== proj.technologies.length - 1 && ( 
-                                                <p className="font-medium text-gray-600">/</p>
+                                                <p className="font-medium text-gray-600 mr-2 lg:mr-0">/</p>
                                             )}
                                         </div>
                                     ))}
@@ -62,13 +62,13 @@ const Projects = forwardRef((props, ref) => (
                         <div className="flex flex-col lg:w-1/3 items-center">
                             <motion.img
                                 src={proj.image} alt={proj.title} loading="lazy" decoding="async"
-                                className="h-full object-fill lg:rounded-tr-lg"
+                                className="w-full lg:h-full object-fill lg:rounded-tr-lg"
                             />
                             <div className="flex w-full items-center text-center text-white justify-center">
                                 {proj.link && (
                                     <a
                                         href={proj.link} target="_blank" rel="noreferrer"
-                                        className={`${proj.link && proj.demo ? "w-1/2" : "w-full lg:rounded-br-md rounded-b-md"} px-4 py-2 bg-gray-800 hover:opacity-80 transition-colors`}
+                                        className={`${proj.link && proj.demo ? "w-1/2 rounded-bl-md lg:rounded-none" : "w-full rounded-b-md lg:rounded-none lg:rounded-br-md"} px-4 py-2 bg-gray-800 hover:opacity-80 transition-colors`}
                                     >
                                         GitHub 
                                     </a>
@@ -76,7 +76,7 @@ const Projects = forwardRef((props, ref) => (
                                 {proj.demo && (
                                     <a
                                         href={proj.demo} target="_blank" rel="noreferrer"
-                                        className={`${proj.link && proj.demo ? "w-1/2 rounded-br-md" : "w-full rounded-b-md lg:rounded-br-md"} px-4 py-2 bg-gray-800 hover:opacity-80 transition-colors`}
+                                        className={`${proj.link && proj.demo ? "w-1/2 rounded-br-md" : "w-full rounded-b-md lg:rounded-none lg:rounded-br-md"} px-4 py-2 bg-gray-800 hover:opacity-80 transition-colors`}
                                     >
                                         Demo
                                     </a>

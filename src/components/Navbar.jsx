@@ -10,7 +10,7 @@ export default function Navbar({ activeSection, expanded }) {
                 <div className="space-x-4">
                     <a href="#info" className="hover:underline">Info</a>
                     <a href="#projects" className="hover:underline">Projects</a>
-                    <a href="#info" className="hover:underline">Contact</a>
+                    <a href="#contact" className="hover:underline">Contact</a>
                 </div>
             </nav>
         </header>

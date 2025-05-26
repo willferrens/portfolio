@@ -12,7 +12,7 @@ const Info = forwardRef((props, ref) => (
                 <motion.div className="flex justify-end">
                     <div className="relative group w-48 h-48 xl:w-64 xl:h-64">
                         <img 
-                            src="/pfp.jpg" alt="WF Profile" loading="lazy"
+                            src="/assets/pfp.jpg" alt="WF Profile" loading="lazy"
                             className="w-full h-full rounded-full shadow-xl border-4 border-white" 
                         />
                         
@@ -41,9 +41,10 @@ const Info = forwardRef((props, ref) => (
                                 initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} whileHover={{ scale: 1.02 }}
                                 viewport={{ once: true }} transition={{ duration: 0.6 }} 
                             >
-                                I have recently been working on some personal projects to learn Rust and Ruby, while also completing
+                                I have recently been working on some personal projects to learn Rust and Ruby while also completing
                                 my coursework at the University of Maryland, College Park. I am always looking to learn a new language or
-                                framework so feel free to reach out!
+                                framework so feel free to reach out! You can find my email listed in the 
+                                {' '}<a href="#contact" className="underline">footer</a>{' '}of my website.
                             </motion.p>
                         </div>
                     </div>
