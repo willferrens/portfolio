@@ -6,11 +6,8 @@
 
 ![JSON](https://img.shields.io/badge/-JSON-black?logo=json&logoColor=white)
 ![npm](https://img.shields.io/badge/-npm-red?logo=npm&logoColor=white)
-![Autoprefixer](https://img.shields.io/badge/-Autoprefixer-d73a49?logo=autoprefixer&logoColor=white)
-![PostCSS](https://img.shields.io/badge/-PostCSS-orange?logo=postcss&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)
-![CSS](https://img.shields.io/badge/-CSS-purple?logo=css3&logoColor=white)
 
 *General Information:*
 
