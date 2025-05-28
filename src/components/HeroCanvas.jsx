@@ -70,8 +70,8 @@ export default function HeroCanvas() {
                 position: "absolute", zIndex: 0,
                 width: "100%", height: "100vh",
                 top: 0, left: 0, pointerEvents: "none",
-                opacity: "40%", backgroundColor: "#111827"
-            }} className="canvas-background"
+                backgroundColor: "#111827"
+            }} className="opacity-50 lg:opacity-40 canvas-background"
         >
             <ambientLight intensity={0.8} />
             <directionalLight position={[10, 10, 10]} intensity={1.2} />

@@ -12,7 +12,7 @@ const Hero = forwardRef((props, ref) => (
         >
             <motion.h1
                 initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }}
-                viewport={{ once: true }} className="text-2xl lg:text-4xl font-bold"
+                viewport={{ once: true }} className="text-2xl font-bold lg:text-4xl"
             >
                 Welcome! I'm Will Ferrens
             </motion.h1>

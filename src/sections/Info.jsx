@@ -7,13 +7,13 @@ const Info = forwardRef((props, ref) => (
         <div className="container mx-auto max-w-[90vw] lg:max-w-4xl xl:max-w-6xl">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
-                viewport={{ once: true }} className="flex flex-col lg:flex-row items-center justify-center gap-8"
+                viewport={{ once: true }} className="flex flex-col items-center justify-center gap-8 lg:flex-row"
             >
                 <motion.div className="flex justify-end">
-                    <div className="relative group w-48 h-48 xl:w-64 xl:h-64">
+                    <div className="relative w-48 h-48 group xl:w-64 xl:h-64">
                         <img 
                             src="/assets/pfp.jpg" alt="WF Profile" loading="lazy"
-                            className="w-full h-full rounded-full shadow-xl border-4 border-white" 
+                            className="w-full h-full border-4 border-white rounded-full shadow-xl" 
                         />
                         
                     </div>
@@ -21,14 +21,14 @@ const Info = forwardRef((props, ref) => (
 
                 <motion.div 
                     initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.8 }}
-                    viewport={{ once: true }} className="flex flex-col lg:grid lg:grid-cols-2 gap-8"
+                    viewport={{ once: true }} className="flex flex-col gap-8 lg:grid lg:grid-cols-2"
                 >
                     <div>
-                        <motion.h2 className="text-3xl lg:text-4xl font-bold mb-8 text-gray-800 relative">
+                        <motion.h2 className="relative mb-8 text-3xl font-bold text-gray-800 lg:text-4xl">
                             About Me
-                            <span className="absolute -bottom-2 left-0 w-24 h-1 bg-blue-500"></span>
+                            <span className="absolute left-0 w-24 h-1 bg-blue-500 -bottom-2"></span>
                         </motion.h2>
-                        <div className="space-y-2 text-md text-gray-700 leading-relaxed">
+                        <div className="space-y-2 leading-relaxed text-gray-700 text-md">
                             <motion.p
                                 initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }} transition={{ duration: 0.6 }}
@@ -49,9 +49,9 @@ const Info = forwardRef((props, ref) => (
                         </div>
                     </div>
                     <div>
-                        <motion.h2 className="text-3xl font-bold mb-8 text-gray-800 relative">
+                        <motion.h2 className="relative mb-8 text-3xl font-bold text-gray-800">
                             Technical Skills
-                            <span className="absolute -bottom-2 left-0 w-24 h-1 bg-blue-500"></span>
+                            <span className="absolute left-0 w-24 h-1 bg-blue-500 -bottom-2"></span>
                         </motion.h2>
                         <div className="grid grid-cols-[repeat(auto-fit,_minmax(50px,_1fr))] lg:grid-cols-[repeat(auto-fit,_minmax(75px,_1fr))] gap-8 justify-center items-center text-gray-700">
                             {
@@ -70,11 +70,11 @@ const Info = forwardRef((props, ref) => (
                                 ))
                             }
                         </div>
-                        <motion.h2 className="text-3xl font-bold mt-4 mb-8 text-gray-800 relative">
+                        <motion.h2 className="relative mt-4 mb-8 text-3xl font-bold text-gray-800">
                             Socials
-                            <span className="absolute -bottom-2 left-0 w-24 h-1 bg-blue-500"></span>
+                            <span className="absolute left-0 w-24 h-1 bg-blue-500 -bottom-2"></span>
                         </motion.h2>
-                        <div className="flex flex-row justify-center lg:justify-start text-white text-sm">
+                        <div className="flex flex-row justify-center text-sm text-white lg:justify-start">
                             {
                                 info.socials.map((social, idx) => (
                                     <button
