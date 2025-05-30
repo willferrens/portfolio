@@ -4,7 +4,7 @@
 
 *General Information:*
 
-![Last Commit](https://img.shields.io/badge/last%20commit-5%2F28%2F2025-blue)
+![Last Commit](https://img.shields.io/badge/last%20commit-5%2F30%2F2025-blue)
 ![JavaScript](https://img.shields.io/badge/javascript-92.4%25-yellow)
 ![Languages](https://img.shields.io/badge/languages-3-blue)
 
