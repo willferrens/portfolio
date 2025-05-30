@@ -66,12 +66,8 @@ function map(value, inMin, inMax, outMin, outMax) {
 export default function HeroCanvas() {
     return (
         <Canvas
-            style={{
-                position: "absolute", zIndex: 0,
-                width: "100%", height: "100vh",
-                top: 0, left: 0, pointerEvents: "none",
-                backgroundColor: "#111827"
-            }} className="opacity-50 lg:opacity-40 canvas-background"
+            style={{ position: "absolute", pointerEvents: "none" }} 
+            className="z-0 top-0 left-0 w-full bg-[#111827] h-[100vh] opacity-50 lg:opacity-40 "
         >
             <ambientLight intensity={0.8} />
             <directionalLight position={[10, 10, 10]} intensity={1.2} />

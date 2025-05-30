@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import info from "../info.json";
 
 const Projects = forwardRef((props, ref) => (
-    <section id="projects" ref={ref} className="relative pt-8 pb-8 items-center justify-center min-h-[85vh] bg-gray-300">
+    <section ref={ref} className="relative pt-8 pb-8 items-center justify-center min-h-[85vh] bg-gray-300">
         {
             info.projects.map((proj, idx) => (
                 <motion.div
@@ -62,7 +62,7 @@ const Projects = forwardRef((props, ref) => (
                         <div className="flex flex-col items-center lg:w-1/3">
                             <motion.img
                                 src={proj.image} alt={proj.title} loading="lazy" decoding="async"
-                                className={`w-full lg:h-full object-fill ${proj.link || proj.demo ? "lg:rounded-tr-lg" : "lg:rounded-r-lg"}`}
+                                className={`w-full lg:h-full object-fill ${proj.link || proj.demo ? "lg:rounded-tr-lg" : "rounded-b-lg lg:rounded-none lg:rounded-r-lg"}`}
                             />
                             <div className="flex items-center justify-center w-full text-center text-white">
                                 {proj.link && (

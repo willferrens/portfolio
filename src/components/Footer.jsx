@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer id="contact" className="bg-gray-900 text-white min-h-[20vh] py-8 px-4 z-1">
+        <footer className="bg-gray-900 text-white min-h-[20vh] py-8 px-4 z-1">
             <div className="grid max-w-6xl gap-8 mx-auto text-center grid-row lg:grid-cols-3">
                 <div>
                     <p className="text-sm">&copy; Will Ferrens 2025<br /><br />All Rights Reserved.</p>
@@ -21,4 +21,4 @@ export default function Footer() {
             </div>
         </footer>
     );
-}
+};

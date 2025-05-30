@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import info from "../info.json";
 
 const Info = forwardRef((props, ref) => (
-    <section id="info" ref={ref} className="relative min-h-[65vh] bg-gray-300 py-5 flex items-center justify-center">
+    <section ref={ref} className="relative min-h-[65vh] bg-gray-300 py-5 flex items-center justify-center">
         <div className="container mx-auto max-w-[90vw] lg:max-w-4xl xl:max-w-6xl">
             <motion.div 
                 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}
@@ -42,9 +42,8 @@ const Info = forwardRef((props, ref) => (
                                 viewport={{ once: true }} transition={{ duration: 0.6 }} 
                             >
                                 I have recently been working on some personal projects to learn Rust and Ruby while also completing
-                                my coursework at the University of Maryland, College Park. I am always looking to learn a new language or
-                                framework so feel free to reach out! You can find my email listed in the 
-                                {' '}<a href="#contact" className="underline">footer</a>{' '}of my website.
+                                my coursework at the University of Maryland, College Park. I am always looking to learn so feel free to 
+                                reach out! You can find my email listed in the footer of my website or you can reach me on LinkedIn.
                             </motion.p>
                         </div>
                     </div>

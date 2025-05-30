@@ -22,8 +22,12 @@ export default function App() {
     const sections = [
         { value: 'Welcome!', ref: heroRef },
         { value: 'Personal Info', ref: infoRef },
-        { value: 'Projects', ref: projRef },
+        { value: 'Projects', ref: projRef }
     ];
+
+    const scrollToSection = (section) => {
+        section?.current?.scrollIntoView({ behavior: 'smooth' });
+    };
 
     // use for expanding navbar on scroll
     useEffect(() => {
@@ -75,6 +79,8 @@ export default function App() {
             <Navbar 
                 activeSection={activeSection} 
                 expanded={expanded}
+                onNavClick={scrollToSection}
+                refs={{ infoRef, projRef }}
             />
             <Hero ref={heroRef} />
             <Info ref={infoRef} />
